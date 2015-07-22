@@ -12,7 +12,7 @@ include _mixins
 			ul.nav.navbar-nav
 				for article, slug in public._data
 					li
-						a(href="/#{ slug }.html")= article.pagename
+						a(href="/#{ slug }.html")= article.title
 				li.dropdown
 					a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 						| Subpage01
@@ -20,10 +20,10 @@ include _mixins
 					ul.dropdown-menu
 						for article, slug in public.subpage01._data
 							li
-								a(href="/subpage01/#{ slug }.html")= article.pagename
+								a(href="/subpage01/#{ slug }.html")= article.title
 						for article, slug in public.subpage01.subpage03._data
 							li
-								a(href="/subpage01/subpage03/#{ slug }.html")= article.pagename
+								a(href="/subpage01/subpage03/#{ slug }.html")= article.title
 				li.dropdown
 					a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 						| Subpage02
@@ -31,5 +31,5 @@ include _mixins
 					ul.dropdown-menu
 						for article, slug in public.subpage02._data
 							li
-								a(href="/subpage02/#{ slug }.html")= article.pagename
+								a(href="/subpage02/#{ slug }.html")= article.title
 +dwLibEnd

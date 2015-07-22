@@ -1,18 +1,18 @@
 {
   "index": {
-    "pagename": "Home",
+    "title": "Home",
     "keywords": "keywords sample Home",
     "description": "keywords sample Home",
     "templateName": "layout"
   },
   "about": {
-    "pagename": "About",
+    "title": "About",
     "keywords": "keywords sample About",
     "description": "keywords sample About",
     "templateName": "layout"
   },
   "contact": {
-    "pagename": "Contact",
+    "title": "Contact",
     "keywords": "keywords sample Contact",
     "description": "keywords sample Contact",
     "templateName": "layout"
