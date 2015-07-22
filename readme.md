@@ -1,6 +1,6 @@
-# Bs-Harp
+# Bs-Harp-Dw
 
-Harp + browser-sync + Bootstrap
+Harp + browser-sync + Bootstrap + DreamWeaver Templates/Libraries
 
 ## Install
 

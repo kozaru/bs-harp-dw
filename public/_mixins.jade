@@ -1,0 +1,16 @@
+mixin dwcStart(editarea)
+	if template
+		<!-- TemplateBeginEditable name="#{editarea}" -->
+	if templateName
+		<!-- InstanceBeginEditable name="#{editarea}" -->
+mixin dwcEnd
+	if template
+		<!-- TemplateEndEditable -->
+	if templateName
+		<!-- InstanceEndEditable -->
+mixin dwLibStart(libname)
+	if template || templateName
+		<!-- #BeginLibraryItem "/Library/#{libname}.lbi" -->
+mixin dwLibEnd
+	if template || templateName
+		<!-- #EndLibraryItem -->

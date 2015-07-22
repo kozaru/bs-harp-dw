@@ -1,6 +1,8 @@
 {
   "index": {
     "pagename": "Subpage01Home",
-    "date": "2015-05-10"
+    "keywords": "keywords sample Subpage01Home",
+    "description": "keywords sample Subpage01Home",
+    "templateName": "layout"
   }
 }

@@ -176,6 +176,41 @@ gulp.task('pretty', function() {
   }
 });
 
+// Change extension of template files for DreamWeaver
+gulp.task('replaceTemExt', function() {
+  gulp.src(config.distTemplates + '*.html')
+      .pipe(ext_replace('.dwt'))
+      .pipe(gulp.dest(config.distTemplates))
+});
+
+// Change extension of library files for DreamWeaver
+gulp.task('replaceLibExt', function() {
+  gulp.src(config.distLibrary + '*.html')
+      .pipe(ext_replace('.lbi'))
+      .pipe(gulp.dest(config.distLibrary))
+});
+
+gulp.task('dw', function() {
+  runSequence(
+    ['replaceTemExt','replaceLibExt']
+  );
+});
+
+// Delete html files for creating template or library
+gulp.task('clean:distTem', function (cb) {
+  del([
+    config.distTemplates + '*.html',
+    config.distLibrary + '*.html'
+  ], cb);
+});
+
+// delete dist directory
+gulp.task('clean:dist', function (cb) {
+  del([
+    config.dist + '**/*'
+  ], cb);
+});
+
 gulp.task('dist', function() {
   runSequence(
     'copysource',

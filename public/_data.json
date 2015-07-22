@@ -1,14 +1,20 @@
 {
   "index": {
     "pagename": "Home",
-    "date": "2015-05-10"
+    "keywords": "keywords sample Home",
+    "description": "keywords sample Home",
+    "templateName": "layout"
   },
   "about": {
     "pagename": "About",
-    "date": "2015-05-11"
+    "keywords": "keywords sample About",
+    "description": "keywords sample About",
+    "templateName": "layout"
   },
   "contact": {
     "pagename": "Contact",
-    "date": "2015-05-12"
+    "keywords": "keywords sample Contact",
+    "description": "keywords sample Contact",
+    "templateName": "layout"
   }
 }
