@@ -16,7 +16,9 @@ html(lang="en")
 	body
 		block main
 			!= partial("_header")
+		+dwcStart("contents")
 		!= yield
+		+dwcEnd
 		script(src="/js/jquery.min.js")
 		script(src="/js/bootstrap.min.js")
 		script(src="/js/custom.js")
